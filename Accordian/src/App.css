@@ -1,0 +1,51 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+}
+
+.accordian_div{
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  display: flex;
+  padding: 20px;
+  background: white;
+  flex-direction: column;
+  width: 400px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  gap: 30px;
+}
+
+.accordian_title{
+  background: white;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 12px;
+  gap: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title{
+  font-size: 18px;
+  font-family: sans-serif;
+  letter-spacing: 1.2px;
+  font-weight: 400;
+}
+
+.accordian_content{
+  background-color: white;
+  color: #023047;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  font-size: 15px;
+  padding: 12px;
+  font-weight: 400;
+  letter-spacing: 1.2px;
+  font-family: sans-serif;
+}

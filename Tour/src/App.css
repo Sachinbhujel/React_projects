@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    /*display: flex;
+    justify-content: center;
+    flex-direction: column;*/
+}
+
+.title_div{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.main div h1 {
+    text-align: center;
+    font-family: sans-serif;
+    border-bottom: 3px solid green;
+    display: inline-block;
+    padding-bottom: 10px;
+    font-weight: 400;
+    letter-spacing: 1.3px;
+}
+
+.tours_div{
+    padding-left: 20px;
+    padding-right: 20px;
+    gap: 25px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.tour_div{
+    width: 280px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    border-radius: 6px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    background-color: white;
+}
+
+.img_div{
+    position: relative;   
+}
+
+@media(width<628px){
+    .tour_div{
+        width: 370px;
+    }
+}
+
+.img_div img{
+    width: 100%;
+    height: 300px;
+}
+
+.img_div div {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 80px;
+    background-color: #2C6E49;
+    color: white;
+    padding: 8px;
+}
+
+.img_div div p{
+    font-size: 20px;
+    letter-spacing: 1.4px;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+.tour_info_div{
+    padding: 22px;
+}
+
+.tour_info_div h2{
+    text-align: center;
+    letter-spacing: 1.3px;
+    font-family: sans-serif;
+    font-size: 21px;
+    font-weight: 500;
+}
+
+.tour_info_div p{
+    margin-top: 20px;
+    font-family: sans-serif;
+    color: #424C55;
+    opacity: 0.8;
+    letter-spacing: 1.2px;
+    font-weight: 400;
+}
+
+.btn_div{
+    display: flex;
+    justify-content: center;
+}
+
+.toggleBtn{
+    background-color: white;
+}
+
+.notInterestedBtn{
+    font-size: 14px;
+    padding: 6px;
+    margin-top: 20px;
+    width: 86%;
+    border-radius: 5px;
+    text-align: center;
+    background-color: white;
+    color: #06D6A0;
+    border: 1px solid #06D6A0;
+}
+
+.notInterestedBtn:hover{
+    background-color: #06D6A0;
+    color: white;
+}
+
+#tour_left{
+    font-size: 22px;
+    font-family: sans-serif;
+    letter-spacing: 1.4px;
+    text-align: center;
+    margin-top: 170px;
+}
+
+@media(width<430px){
+    .tours_div{
+        flex-direction: column;
+    }   
+    .tour_div{
+        width: 100%;
+    }
+    .img_div img{
+        width: 100%;
+    }
+}
