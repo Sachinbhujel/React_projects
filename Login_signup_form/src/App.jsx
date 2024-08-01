@@ -27,6 +27,7 @@ function App() {
             <input type="password" placeholder='Password'/>
             <input type="password" placeholder='Confirm Password'/>
             <button>SignUp</button>
+            <p>Have an account? <a href="#" onClick={() => setIsLogin(true)}>Login</a></p>
         </div>
         </>}
       </div>

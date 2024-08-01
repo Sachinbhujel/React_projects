@@ -9,11 +9,11 @@ body {
   }
   
   .container {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    width: 100%;
   }
   
   .form-container {
@@ -82,4 +82,22 @@ body {
   
   .form p {
     text-align: center;
+  }
+
+  @media(width<500px){
+    .form-container {
+        width: 260px !important;
+    } 
+  }
+
+  @media(width<400px){
+    .form-container {
+        width: 240px !important;
+    } 
+  }
+
+  @media(width<340px){
+    .form-container {
+        width: 90% !important;
+    } 
   }
