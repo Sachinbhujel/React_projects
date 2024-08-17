@@ -1,11 +1,15 @@
 import './App.css';
-import Rating_star from '../../Components/Rating_star/App';
+import Image_slider from '../../Components/Image_slider/App';
+import Load_more_button from '../../Components/Load_more_button/App';
+import Tree_view from '../../Components/Tree_view';
 
 function App() {  
 
   return (
     <>
-      {/* <Rating_star/> */}
+      {/* <Image_slider/> */}
+      {/* <Load_more_button /> */}
+      <Tree_view />
     </>
   );
 }
