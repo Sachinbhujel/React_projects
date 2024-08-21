@@ -1,38 +1,45 @@
-import React, {useState} from 'react'
-import Data from './Data'
-import './App.css'
+import React, { useState } from 'react';
+import Data from './Data';
+import './App.css';
 
 function Tree_view() {
-    
-  let [data, setData] = useState(Data)
+  let [nodes, setNodes] = useState({});
 
-  function handleClick(currentIndex){
-    alert(currentIndex);
-  }
+  const toggleNode = (label) => {
+    setNodes(prev => ({
+      ...prev,
+      [label]: !prev[label]
+    }));
+  };
 
   let treeFetch = (items) => {
-    return(
-        <ul>
-            {items.map((item,index) => (
-                <div key={index}>
-                    <li style={{ marginLeft: '20px', marginBottom: "6px"}} onClick={() => handleClick(index)}>
-                        <div className='nav_div'>
-                          {item.label}
-                          <span className="material-symbols-outlined">add</span>
-                        </div>
-                        {item.children && treeFetch(item.children)}                        
-                    </li>
-                </div>
-            ))}
-        </ul>
-    )
-  }
-  
+    return (
+      <ul>
+        {items.map((item) => (
+          <li key={item.label} style={{ marginLeft: '20px', marginBottom: '6px' }}>
+            <div
+              className='nav_div'
+              onClick={() => item.children && toggleNode(item.label)}
+            >
+              {item.label}
+              {item.children && (
+                <span className="material-symbols-outlined">
+                  {nodes[item.label] ? 'remove' : 'add'}
+                </span>
+              )}
+            </div>
+            {nodes[item.label] && item.children && treeFetch(item.children)}
+          </li>
+        ))}
+      </ul>
+    );
+  };
+
   return (
     <>
-      {treeFetch(data)}  
+      {treeFetch(Data)}
     </>
-  )
+  );
 }
 
-export default Tree_view
+export default Tree_view;

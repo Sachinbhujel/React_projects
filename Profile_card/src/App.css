@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+body{
+  background-color: blueviolet;
+}
+
 .user_profile{
   display: flex;
   justify-content: center;
@@ -11,7 +15,9 @@
 }
 
 .main{
+  width: 300px;
   background: black;
+  margin-bottom: 20px;
 }
 
 .user_info{
@@ -56,10 +62,44 @@
 }
 
 .buttons button{
-  width: 130px;
+  width: 100px;
   font-size: 16px;
-  padding: px;
+  padding: 6px;
+  border-radius: 6px;
   background-color: bisque;
+}
+
+.about_div{
+  padding: 14px;
+}
+
+.about_div h3{
+  font-family: sans-serif;
+  margin-top: 20px;
+  color: white;
+}
+
+.about_div p{
+  margin-top: 10px;
+  font-family: sans-serif;
+  letter-spacing: 1.3px;
+  color: white;
+}
+
+.interest_div{
+  padding: 14px;;
+}
+
+.interest_div h3{
+  font-family: sans-serif;
+  color: white;
+}
+
+.interest_div p{
+  letter-spacing: 1.3px;
+  margin-top: 10px;
+  font-family: sans-serif;
+  color: white;
 }
 
 @media(width<400px){
