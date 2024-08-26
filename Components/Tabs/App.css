@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+  .tab{
+    display: flex;
+    gap: 13px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .tab button {
+    cursor: pointer;
+    padding: 8px;
+    transition: 0.3s;
+    font-size: 14px;
+  }
+  
+  .tab button:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
