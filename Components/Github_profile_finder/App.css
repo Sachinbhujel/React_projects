@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.app{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+}
+
+.user_find_div{
+    display: flex;
+    gap: 15px;
+}
+
+.user_find_div input{
+    outline: none;
+    font-size: 14px;
+    padding: 5px;
+}
+
+.user_find_div button{
+    background-color: black;
+    color: white;
+    width: 72px;
+    border-radius: 6px;
+}
+
+.showProfile{
+    margin-top: 20px;
+}
+
+.userProfile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.userProfile img{
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+}
+
+.userProfile p{
+    font-family: sans-serif;
+}
