@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react'
+import {useState, useEffect} from 'react'
 import './App.css'
 
 function Github_profile_finder(){
@@ -15,12 +15,11 @@ function Github_profile_finder(){
             setUserData(data);
         } catch (error) {
             setUserData(null);
-            alert(error.message);
         }
     }
 
     function handleSubmit(){
-        fetchUserNameSearch()
+        fetchUserNameSearch();
     }
 
     useEffect(() => {
@@ -36,13 +35,15 @@ function Github_profile_finder(){
                     <button onClick={handleSubmit}>Search</button>
                 </div>
                 <div className="showProfile">
-                    {userData && (
+                    {userData ? (
                         <div className="userProfile">
-                            <img src={userData.avatar_url}/>
-                            <h2><a href={`https://github.com${login}`}>{userData.name}</a></h2>
+                            <img src={userData.avatar_url} alt={`${userData.login}'s avatar`}/>
+                            <h2><a href={`https://github.com/${userData.login}`}>{userData.name || userData.login}</a></h2>
                             <p>Followers - {userData.followers}</p>
                             <p>Following - {userData.following}</p>
                         </div>
+                    ) : (
+                        <p>No user data found</p>
                     )}
                 </div>
             </div>
