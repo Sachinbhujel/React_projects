@@ -12,8 +12,8 @@ import Search_autocomplete from '../../Components/Search_autocomplete/App';
 import UserFet from '../../Components/UseFetch_hook/App';
 import Show_onclickOutside from '../../Components/Show_onclickOutside/App';
 import UserWidthHook from '../../Components/UseWidthHook/App';
-import Scroll_bar from '../../Components/Scroll_bar/App';*/
-import Weather from '../../Components/Weather/App';
+import Scroll_bar from '../../Components/Scroll_bar/App';
+import Weather from '../../Components/Weather/App';*/
 
 function App() {  
 
@@ -33,7 +33,7 @@ function App() {
       {/* <Show_onclickOutside /> */}
       {/* <UserWidthHook /> */}
       {/* <Scroll_bar /> */}
-      <Weather />
+      {/* <Weather /> */}
     </>
   );
 }
